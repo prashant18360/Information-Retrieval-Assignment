@@ -167,7 +167,7 @@ for i in QID_list:
 # /////////////////////////75 ////////////////////
 #extraxting the 75th index
 for i in range(len(text_word_list)):
-	if (int(text_word_list[i][0])>0):
+	# if (int(text_word_list[i][0])>0):
 		text_75_word_list.append(float(text_word_list[i][76][3:]))
 print(text_75_word_list)
 print(len(text_75_word_list))
@@ -175,8 +175,9 @@ text_75_word_list_sorted=list(text_75_word_list)
 
 text_75_word_list_sorted.sort(reverse=True)
 Yes_NO=[]
-for i in text_75_word_list_sorted:
-	if i>=0:
+for i in range (len(text_75_word_list_sorted)):
+	if (int(text_word_list[i][0])>0):
+	
 		Yes_NO.append(1)
 	else:
 		Yes_NO.append(0)

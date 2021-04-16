@@ -200,10 +200,14 @@ recall=[]
 for i in range(len(Yes_NO)):
 	Precision.append(Y[i]/(Y[i]+N[i]))
 	recall.append(Y[i]/len(Yes_NO))
-print("Precision",Precision)
-print(recall)
+print("Precision")
+print(Precision)
+print("recall")
+print( recall)
 
 
 plt.plot(recall,Precision)
+plt.xlabel("Recall")
+plt.ylabel("Precision")
 plt.show()
 

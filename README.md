@@ -1,1 +1,1 @@
-# IR2021_A2_25
+# Information Retrieval Assignment
